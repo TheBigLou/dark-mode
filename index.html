@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fa-solid fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#illustrations">ILLUSTRATIONS</a>
+        <a href="#elements">ELEMENTS</a>
+        <a href="#icons">ICONS</a>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Light / Dark Mode Switcher</h1>
+            <h2>Welcome to the website!</h2>
+        </div>
+    </section>
+    <!-- Illustration Section -->
+    <section id="illustrations">
+            <h1>Illustrations</h1>
+            <p><em>These will change with the light/dark mode toggle</em></p><br>
+            <div class="illustration-container">
+                <div class="image-container">
+                    <h2>Proud coder</h2>
+                    <img src="img/undraw_proud_coder_light.svg" alt="Proud coder light" id="image1">
+                </div>
+                <div class="image-container">
+                    <h2>Art concept</h2>
+                    <img src="img/undraw_conceptual_idea_light.svg" alt="Concept light" id="image2">
+                </div>
+                <div class="image-container">
+                    <h2>Waiting to compile</h2>
+                    <img src="img/undraw_feeling_proud_light.svg" alt="Feeling proud light" id="image3">
+                </div>
+            </div>
+    </section>
+    <!-- Elements Section -->
+    <section id="elements">
+        <h1>Elements</h1>
+        <div class="buttons">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="primary" disabled>Disabled</button>
+            <button class="outline">Outline</button>
+            <button class="secondary outline">Alt Outline</button>
+            <button class="outline" disabled>Disabled Outline</button>
+        </div>
+        <div class="text-box" id="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, esse! Voluptatibus dignissimos quis aliquam consectetur! Eos, suscipit porro nisi praesentium voluptates, sequi beatae quidem ut rem excepturi, quibusdam dicta cumque.</p>
+        </div>
+    </section>
+    <!-- Icons Section -->
+    <section id="icons">
+        <h1>Icons</h1>
+        <div class="social-icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-inbox"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
