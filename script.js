@@ -7,8 +7,8 @@ const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 
 // Dark or light images
-function modeHelper(mode) {
-    toggleIcon.children[0].textContent = `${mode} Mode`;
+function modeHelper(mode, label) {
+    toggleIcon.children[0].textContent = `${label} Mode`;
     image1.src = `img/undraw_proud_coder_${mode}.svg`;
     image2.src = `img/undraw_conceptual_idea_${mode}.svg`;
     image3.src = `img/undraw_feeling_proud_${mode}.svg`;
@@ -19,7 +19,7 @@ function darkModeToggle(isDark) {
     textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 60%)' : 'rgb(0 0 0 / 60%)';
     isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') :
         toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-    isDark ? modeHelper('Dark') : modeHelper('Light');
+    isDark ? modeHelper('dark', 'Dark') : modeHelper('light', 'Light');
 }
 
 // Switch theme
